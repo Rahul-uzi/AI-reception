@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-dotenv
+pipecat-ai[silero,websocket,elevenlabs]
+loguru
+aiohttp
+httpx
+aiosqlite
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+twilio
+pipecat-ai[twilio]
