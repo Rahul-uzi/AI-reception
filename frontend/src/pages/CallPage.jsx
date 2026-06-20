@@ -9,7 +9,7 @@ import CallControls     from '../components/call/CallControls'
 import TranscriptPanel  from '../components/call/TranscriptPanel'
 import { Mic }          from 'lucide-react'
 
-const WS_URL = import.meta.env.VITE_WS_URL || `ws://${window.location.host}/ws`
+const WS_URL = import.meta.env.VITE_WS_URL || `${window.location.protocol === 'https:' ? 'wss' : 'ws'}://${window.location.host}/ws`
 
 export default function CallPage({ isPublic = false }) {
   const navigate = useNavigate()
